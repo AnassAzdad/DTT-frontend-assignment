@@ -1,0 +1,14 @@
+:root {
+  
+  --color-primary: #EB5440;
+  --color-black: #000000;
+  --color-secondary: #4A4B4C;
+  --color-link: #067BC2;
+  --color-tertiary-light: #E8E8E8;
+  --color-tertiary-dark: #C3C3C3;
+  --color-bg-1: #F6F6F6;
+  --color-bg-2: #FFFFFF;
+
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Open Sans', sans-serif;
+}

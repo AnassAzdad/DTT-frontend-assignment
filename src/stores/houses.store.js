@@ -180,5 +180,14 @@ export const useHousesStore = defineStore('houses', {
         image: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=800&q=80'
       }
     ]
-  })
+  }),
+
+  actions: {
+    addHouse(house) {
+      this.houses.push({
+        ...house,
+        id: Date.now()
+      })
+    }
+  }
 })

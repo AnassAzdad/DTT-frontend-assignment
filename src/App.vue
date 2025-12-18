@@ -1,6 +1,6 @@
 <template>
   <AppHeader />
-  <main style="padding-top: 80px;">
+  <main class="content">
     <router-view />
   </main>
 </template>
@@ -14,3 +14,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.content {
+  padding-top: 80px;
+}
+</style>

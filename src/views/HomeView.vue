@@ -51,14 +51,14 @@ const filteredHouses = computed(() => {
     house.address.toLowerCase().includes(search.value.toLowerCase()) ||
     house.city.toLowerCase().includes(search.value.toLowerCase())
   )
+if (sortOption.value === 'price') {
+  result = result.sort((a, b) => b.price - a.price)
+}
 
-  if (sortOption.value === 'price') {
-    result = result.sort((a, b) => a.price - b.price)
-  }
+if (sortOption.value === 'size') {
+  result = result.sort((a, b) => b.size - a.size)
+}
 
-  if (sortOption.value === 'size') {
-    result = result.sort((a, b) => a.size - b.size)
-  }
 
   return result
 })
